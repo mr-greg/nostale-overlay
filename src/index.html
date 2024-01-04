@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self'; script-src 'self' 'unsafe-eval'">
+    <title>Zaasgobas</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/checklist.css" />
+  </head>
+  <body>
+    <form class="select">
+      <div class="checkboxes">
+        <input type="checkbox" id="asgo" class="square asgo" onsubmit="JavaScript:sendForm(event)"></input>
+        <input type="checkbox" id="ic" class="square ic"></input>
+        <input type="checkbox" id="lod" class="square lod"></input>
+      </div>
+      <div class="notifs">
+        <input type="checkbox" id="notifAsgo" class="switch"/><label for="notifAsgo" class="switchLabel">Toggle</label>
+        <input type="checkbox" id="notifIc" class="switch"/><label for="notifIc" class="switchLabel">Toggle</label>
+        <input type="checkbox" id="notifLod" class="switch"/><label for="notifLod" class="switchLabel">Toggle</label>
+      </div>
+      <button id="submitOverlay">Submit</button>
+      <p id="error">You didn't select anything</p>
+    </form>
+
+    <hr class="rounded">
+
+    <div class="ancelContainer">
+      <button class="square buttonSquare bene" id="ancel">
+        <span id="timer"></span>
+        <span id="pause"></span>
+        <span id="restart"></span>
+      </button>
+    </div>
+
+    <button id="checklistBtn">XP Mats</button>
+    <div id="checkListContainer">
+      <div id="checklist">
+        <input id="01" type="checkbox">
+        <label for="01">Anceollan's Blessing</label>
+        <input id="02" type="checkbox">
+        <label for="02">Pet Blessing</label>
+        <input id="03" type="checkbox">
+        <label for="03">Soul Stone's Blessing</label>
+        <input id="05" type="checkbox">
+        <label for="05">Fairy Booster</label>
+        <input id="06" type="checkbox">
+        <label for="06">Tarot</label>
+        <input id="07" type="checkbox">
+        <label for="07">Potion atq, def, xp...</label>
+        <input id="08" type="checkbox">
+        <label for="08">Potion Divine</label>
+        <input id="09" type="checkbox">
+        <label for="09">Snacks</label>
+        <input id="10" type="checkbox">
+        <label for="10">Pet food</label>
+        <input id="11" type="checkbox">
+        <label for="11">Dolls pets, partners</label>
+        <input id="12" type="checkbox">
+        <label for="12">Return wings</label>
+        <input id="13" type="checkbox">
+        <label for="13">Potion of salvation (lod, lol)</label>
+        <input id="14" type="checkbox">
+        <label for="14">Ice flower oil</label>
+      </div>
+    </div>
+
+
+
+    <script src="./index.js" defer></script>
+    <script src="./scripts/ancelTimer.js"></script>
+
+  </body>
+</html>

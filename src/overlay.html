@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self'; script-src 'self' 'unsafe-eval'">
+    <title>Zaasgobas</title>
+    <link rel="stylesheet" href="./styles/overlay.css" />
+  </head>
+  <body>
+    <button id="close" aria-hidden="true">&times;</button>
+    <div id="asgo" class="timerContainer">
+      <div class="imgContainer">
+        <img src="./img/asgo.png" class="img"/>
+      </div>
+      <p class="timer" id="asgoP">Loading...</p>
+    </div>
+    <div id="ic" class="timerContainer">
+      <div class="imgContainer">
+        <img src="./img/ic.png" class="img">
+      </div>
+      <p class="timer" id="icP">Loading...</p>
+    </div>
+    <div id="lod" class="timerContainer">
+      <div class="imgContainer">
+        <img src="./img/dh.png" class="img">
+      </div>
+      <p class="timer" id="lodP">Loading...</p>
+    </div>
+
+    <script src="./scripts/asgoTimers.js"></script>
+    <script src="./scripts/icTimers.js"></script>
+    <script src="./scripts/lodTimers.js"></script>
+    <script src="./overlay.js" defer></script>
+  </body>
+</html>
